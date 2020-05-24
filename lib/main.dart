@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutteruikit/screens/CreateFamilyScreen.dart';
 import 'package:flutteruikit/screens/DashboardScreen.dart';
+import 'package:flutteruikit/screens/DemoScreen.dart';
 import 'package:flutteruikit/screens/JoinFamilyScreen.dart';
 import 'package:flutteruikit/screens/LoginScreen.dart';
 import 'package:flutteruikit/screens/SignUpScreen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: DefaultTheme.lightTheme,
-      initialRoute: 'dashboard',
+      initialRoute: 'onboarding',
       routes: {
         'onboarding': (BuildContext context)=> Onboarding(),
         'start': (BuildContext context)=> StartScreen(),
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         'family': (BuildContext context) => CreateFamilyScreen(),
         'joinfamily': (BuildContext context) => JoinFamilyScreen(),
         'dashboard': (BuildContext context) => DashboardScreen(),
+        'demo': (BuildContext context) => DemoScreen()
       },
     );
   }

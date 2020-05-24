@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutteruikit/styles/theme.light.dart';
 import 'package:flutteruikit/widgets/sm_button.dart';
 
@@ -9,6 +10,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _textEditingController;
+  
 
   @override
   Widget build(BuildContext context) {
